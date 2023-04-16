@@ -43,12 +43,32 @@
   height: 50px;
 }
 
+.w50px {
+  width: 50px;
+}
+
 .h40px {
   height: 40px;
 }
 
 .w40px {
   width: 40px;
+}
+
+.h90px {
+  height: 90px;
+}
+
+.w80px {
+  width: 80px;
+}
+
+.w100px {
+  width: 100px;
+}
+
+.h300px {
+  height: 300px;
 }
 
 .w300px {
@@ -7761,6 +7781,10 @@ progress {
     display: none !important;
   }
 }
+html, body {
+  height: 100%;
+}
+
 .input-group .form-control:focus {
   box-shadow: none;
 }
@@ -7770,9 +7794,20 @@ progress {
 }
 
 .nav-link:hover {
-  border-bottom: 3px solid #0784ea;
+  border-bottom: 3px solid #0dcaf0;
 }
 
-.nav a:hover i {
-  color: #0784ea;
+.nav a {
+  color: #8594a1;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #0dcaf0;
+}
+
+.sticky {
+  position: fixed;
+  bottom: 5%;
+  right: 312px;
 }

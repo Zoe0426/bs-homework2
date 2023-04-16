@@ -2,8 +2,13 @@
 
 @include fz()
 @include hnpx(50)
+@include wnpx(50)
 @include hnpx(40)
 @include wnpx(40)
+@include hnpx(90)
+@include wnpx(80)
+@include wnpx(100)
+@include hnpx(300)
 @include wnpx(300)
 @include wnpx(600)
 @include wnpx(700)
@@ -34,6 +39,8 @@ $theme-colors: map-merge($theme-colors, $my-colors)
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "../bootstrap/scss/utilities/api"
 // 8. Add additional custom code here
+html,body
+    height: 100%
 .input-group
     .form-control
         &:focus
@@ -42,8 +49,15 @@ $theme-colors: map-merge($theme-colors, $my-colors)
     &::-webkit-input-placeholder
         color: #e5e5e5
 .nav-link:hover
-    border-bottom: 3px solid #0784ea
+    border-bottom: 3px solid #0dcaf0
+.nav
+    a
+        color: #8594a1
+        transition: color .3s ease
 .nav
     a:hover
-        i
-            color: #0784ea
+        color: #0dcaf0
+.sticky
+    position: fixed
+    bottom: 5%
+    right: 312px
