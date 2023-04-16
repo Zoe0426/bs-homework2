@@ -7805,9 +7805,3 @@ html, body {
 .nav a:hover {
   color: #0dcaf0;
 }
-
-.sticky {
-  position: fixed;
-  bottom: 5%;
-  right: 312px;
-}
